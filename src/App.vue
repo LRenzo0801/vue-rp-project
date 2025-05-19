@@ -1,10 +1,14 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+
+const handleClick = () => {
+  console.log('clicked')
+}
 </script>
 
 <template>
   <div>
-    <a href="https://vite.dev" target="_blank">
+    <a href="https://vite.dev" target="_blank" v-on:click="handleClick">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
